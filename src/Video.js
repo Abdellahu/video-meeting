@@ -35,7 +35,6 @@ function Video() {
   // --- State ---
   const [videoAvailable, setVideoAvailable] = useState(false);
   const [audioAvailable, setAudioAvailable] = useState(false);
-  const [li, setLi] = useState(false);
   const [streamState, setStreamState] = useState({
     video: false,
     audio: false,
@@ -129,9 +128,7 @@ function Video() {
       tracks && tracks.forEach(track => track.stop());
     } catch (e) {}
   };
- const vidSee = () => {
-   setLi(true)
- }
+ 
   const getUserMedia = () => {
     if ((streamState.video && videoAvailable) || (streamState.audio && audioAvailable)) {
       navigator.mediaDevices.getUserMedia({ video: streamState.video, audio: streamState.audio })
@@ -416,10 +413,6 @@ function Video() {
   };
 
   // --- Handlers ---
-  const handleFirstVideo = () => {
-   setLi(true)
-   setStreamState((prev) => ({ ...prev, video: !prev.video }));
-  } 
   const handleVideo = () => setStreamState((prev) => ({ ...prev, video: !prev.video }));
   const handleAudio = () => setStreamState((prev) => ({ ...prev, audio: !prev.audio }));
   const handleScreen = () => setStreamState((prev) => ({ ...prev, screen: !prev.screen }));
