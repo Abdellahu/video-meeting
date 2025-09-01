@@ -1,0 +1,47 @@
+.home{
+    min-height: 100vh;
+    background-image: url(./Images/5590457.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
+.githubCode {
+    font-size: 14px; 
+    color: white;
+    width: 30%;
+    text-align: center; 
+    margin: auto;
+    margin-bottom: 10px;
+}
+.githubIcon{
+     color: black;
+}
+.right-wrapper{
+    margin: 7% 15%;
+    color: white;
+}
+.VideoMeeting{
+    font-size: 45px;
+}
+.conference{
+    font-weight: 200;
+}
+.startGit{
+    color: rgb(0, 0, 0);
+    width: 30%;
+    height: auto; 
+    padding: 20px; 
+    min-width: 400px;
+    text-align: center; 
+    margin: 100px auto;
+}
+.innerStart{
+    margin: 0;
+    font-weight: 500; 
+    padding-right: 50px;
+    font-size: 18px;
+}
+.go{
+     margin: 20px;
+}

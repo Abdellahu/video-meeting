@@ -1,0 +1,115 @@
+.firstVideo{
+    min-height: 100vh;
+    background-image: url(./Images/andyone--WW8jBak7bo-unsplash.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+}
+.lastPartVideo{
+    background-image: url(./Images/view-photo-frames-with-home-decor-interior-design.jpg); 
+}
+.vidFirst { 
+    background-color: #3b4b77a4;
+    color:  white;
+    width:  30%;
+    height:  auto;
+    padding:  20px;
+    min-width:  400px;
+    text-align:  center;
+    margin: auto;
+    justify-content: center;
+    border-radius: 0px 0px 10px 10px;
+}
+.setVideo {
+   margin: 0; 
+   font-weight: bold;
+   padding-right: 50px;
+}
+.inputName{
+    color: white;
+}
+.connect {
+   margin: 20px;
+}
+.videoDiv {
+    justify-content: center; 
+    text-align: center; 
+    padding-top: 40px;
+}
+.videotag { 
+    border-style: solid;
+    border-color: #bdbdbd;
+    object-fit: fill;
+    width: 40%;
+    height: 20%;           
+}
+.camIcon { 
+    background-color: rgb(89, 99, 158);
+    color: whitesmoke;
+    text-align: center;        
+}
+.main video, .upperCam{
+    display: block;
+    background-color: #274ea1;
+    border-radius: 10px;
+    box-shadow: 1px 2px 10px #30324e;
+    padding: 10px;
+    margin: 20px auto;
+
+}
+.realCam {
+    color: #424242;
+}
+.realICam {
+    color: #f44336;
+}
+.realICamera {
+    color: #424242;
+}
+.chatRoom {
+    z-index: 999999;
+}
+.chatBefore {
+    overflow: auto;
+    overflow-Y: auto;
+    height: 400px;
+    text-align: left;      
+}
+.index {
+   text-align: left;
+}
+.indexUpper {
+    word-break: break-all;
+}
+.copyUpper {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    width: 330px;
+    background-color: #b3bcf3d7;
+    border-radius: 10px;
+}
+.copyInput{
+    padding-left: 10px;
+
+}
+#copy { 
+    background-color: #3f51b5;
+    color: rgb(255, 255, 255);
+    margin-left: 5px;
+    margin-top: 0px;
+    width: 120px;
+    font-size: 10px;
+}
+.vidContainer {
+    margin: 0; 
+    padding: 0;
+}
+.lastRow { 
+    border-style: solid;
+    border-color: #bdbdbd;
+    margin: 10px auto;
+    object-fit: fill;
+    width: 60%;
+    height: 20%;
+}
