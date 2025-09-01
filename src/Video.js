@@ -78,7 +78,7 @@ function Video() {
 
   // --- Manage stream when toggling video/audio/screen ---
   useEffect(() => {
-    if (!streamState.askForUsername || li) {
+    if (!streamState.askForUsername) {
       if (streamState.screen) {
         getDisplayMedia();
       } else if (streamState.video || streamState.audio) {
@@ -88,18 +88,18 @@ function Video() {
       }
     }
     // eslint-disable-next-line
-  }, [streamState.video, streamState.audio, streamState.screen, streamState.askForUsername, li]);
+  }, [streamState.video, streamState.audio, streamState.screen, streamState.askForUsername]);
 
   // --- Socket connection ---
   useEffect(() => {
-    if (!streamState.askForUsername || li) {
+    if (!streamState.askForUsername) {
       connectToSocketServer();
       return () => {
         if (socketRef.current) socketRef.current.disconnect();
       }
     }
     // eslint-disable-next-line
-  }, [streamState.askForUsername, li]);
+  }, [streamState.askForUsername]);
 
    useEffect(() => {
     // Request camera access and set the video stream
